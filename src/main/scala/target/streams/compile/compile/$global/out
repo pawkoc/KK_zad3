@@ -1,0 +1,274 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/home/pawel/intellij/scala/KK_zad3/src/main/scala/Main.scala, /home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mModified external sources: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/pawel/intellij/scala/KK_zad3/src/main/scala/Main.scala, /home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/pawel/intellij/scala/KK_zad3/src/main/scala/Main.scala, /home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 2 sources: invalidated sources (2) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /home/pawel/intellij/scala/KK_zad3/src/main/scala/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 52388dda, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-5.b18.fc21.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-5.b18.fc21.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-5.b18.fc21.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-5.b18.fc21.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-5.b18.fc21.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-5.b18.fc21.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-5.b18.fc21.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-5.b18.fc21.x86_64/jre/classes:/home/pawel/.sbt/boot/scala-2.10.3/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/pawel/intellij/scala/KK_zad3/src/main/scala/target/scala-2.10/classes[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:2: not found: object AST[0m
+[0m[[31merror[0m] [0mimport AST._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:54: not found: type Node[0m
+[0m[[31merror[0m] [0m  def parseAll(input: java.io.FileReader): ParseResult[List[Node]] = parseAll(program, input)[0m
+[0m[[31merror[0m] [0m                                                            ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/Main.scala:21: not found: value AST[0m
+[0m[[31merror[0m] [0m                 case parser.Success(result: List[AST.Node], in) => {[0m
+[0m[[31merror[0m] [0m                                                  ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/Main.scala:24: not found: value AST[0m
+[0m[[31merror[0m] [0m                     val tree = AST.NodeList(result)[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/Main.scala:25: not found: value simplifier[0m
+[0m[[31merror[0m] [0m                     val simplifiedTree = simplifier.Simplifier.simplify(tree)[0m
+[0m[[31merror[0m] [0m                                          ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:24: not found: type Node[0m
+[0m[[31merror[0m] [0m  val newl: Parser[Node] = """(\r?\n)|\r""".r ^^ StringConst[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:24: not found: value StringConst[0m
+[0m[[31merror[0m] [0m  val newl: Parser[Node] = """(\r?\n)|\r""".r ^^ StringConst[0m
+[0m[[31merror[0m] [0m                                                 ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:46: not found: type Node[0m
+[0m[[31merror[0m] [0m  def const: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:47: not found: value FloatNum[0m
+[0m[[31merror[0m] [0m        floatLiteral ^^ FloatNum[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:57: not found: type Node[0m
+[0m[[31merror[0m] [0m  def program: Parser[List[Node]] = rep(newl) ~> rep(statement <~ rep(newl))[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:61: not found: type Node[0m
+[0m[[31merror[0m] [0m  def statement: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:198: not found: type Node[0m
+[0m[[31merror[0m] [0m  def simple_statement: Parser[Node] = (small_statement_list<~';'.?) <~ rep1(newl) ^^ NodeList[0m
+[0m[[31merror[0m] [0m                               ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:211: not found: type Node[0m
+[0m[[31merror[0m] [0m  def compound_statement: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:67: not found: type Node[0m
+[0m[[31merror[0m] [0m  def expression: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:187: not found: type Variable[0m
+[0m[[31merror[0m] [0m  def id_list: Parser[List[Variable]] = repsep(id, ",") ^^ {[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:69: not found: value LambdaDef[0m
+[0m[[31merror[0m] [0m              case formal_args ~ body => LambdaDef(IdList(formal_args), body)[0m
+[0m[[31merror[0m] [0m                                         ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:75: not found: type Node[0m
+[0m[[31merror[0m] [0m  def or_expr: Parser[Node] = rep1sep(and_expr, "or") ^^ {[0m
+[0m[[31merror[0m] [0m                      ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:79: not found: type Node[0m
+[0m[[31merror[0m] [0m  def and_expr: Parser[Node] = rep1sep(not_expr, "and") ^^ {[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:76: missing parameter type for expanded function ((x$4, x$5) => BinExpr("or", x$4, x$5))[0m
+[0m[[31merror[0m] [0m      case xs => (xs.head /: xs.tail) ( BinExpr("or", _, _) )[0m
+[0m[[31merror[0m] [0m                                                      ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:76: not found: value BinExpr[0m
+[0m[[31merror[0m] [0m      case xs => (xs.head /: xs.tail) ( BinExpr("or", _, _) )[0m
+[0m[[31merror[0m] [0m                                        ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:85: not found: type Node[0m
+[0m[[31merror[0m] [0m  def not_expr: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:80: missing parameter type for expanded function ((x$7, x$8) => BinExpr("and", x$7, x$8))[0m
+[0m[[31merror[0m] [0m      case xs => (xs.head /: xs.tail) ( BinExpr("and", _, _) )[0m
+[0m[[31merror[0m] [0m                                                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:80: not found: value BinExpr[0m
+[0m[[31merror[0m] [0m      case xs => (xs.head /: xs.tail) ( BinExpr("and", _, _) )[0m
+[0m[[31merror[0m] [0m                                        ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:87: not found: value Unary[0m
+[0m[[31merror[0m] [0m        "not"~>not_expr ^^ (Unary("not", _)) // equivalent to "not"~>not_expr ^^ { case not_expr => Unary("not", not_expr) }[0m
+[0m[[31merror[0m] [0m                            ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:94: not found: type Node[0m
+[0m[[31merror[0m] [0m  def target: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:95: not found: value Variable[0m
+[0m[[31merror[0m] [0m        id ^^ Variable[0m
+[0m[[31merror[0m] [0m              ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:100: not found: type Node[0m
+[0m[[31merror[0m] [0m  def subscription: Parser[Node] = (expression<~"[")~expression<~"]" ^^ {[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:101: not found: value Subscription[0m
+[0m[[31merror[0m] [0m      case expr~sub => Subscription(expr,sub)[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:104: not found: type Node[0m
+[0m[[31merror[0m] [0m  def get_attr: Parser[Node] = (expression<~".")~id ^^ {[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:105: not found: value GetAttr[0m
+[0m[[31merror[0m] [0m      case expression~id => GetAttr(expression,id)[0m
+[0m[[31merror[0m] [0m                            ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:109: not found: type Node[0m
+[0m[[31merror[0m] [0m  def binary(level: Int): Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:122: not found: type Node[0m
+[0m[[31merror[0m] [0m  def unary: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:115: not found: type Node[0m
+[0m[[31merror[0m] [0m  def binaryOp(level: Int): Parser[((Node, Node) => BinExpr)] = {[0m
+[0m[[31merror[0m] [0m                                     ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:115: not found: type Node[0m
+[0m[[31merror[0m] [0m  def binaryOp(level: Int): Parser[((Node, Node) => BinExpr)] = {[0m
+[0m[[31merror[0m] [0m                                           ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:115: not found: type BinExpr[0m
+[0m[[31merror[0m] [0m  def binaryOp(level: Int): Parser[((Node, Node) => BinExpr)] = {[0m
+[0m[[31merror[0m] [0m                                                    ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:117: not found: type Node[0m
+[0m[[31merror[0m] [0m        op => op ^^^ { ((a:Node, b:Node) => BinExpr(op,a,b)) }[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:124: not found: value Unary[0m
+[0m[[31merror[0m] [0m                             case "-" ~ expression => Unary("-", expression) [0m
+[0m[[31merror[0m] [0m                                                      ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:130: not found: type Node[0m
+[0m[[31merror[0m] [0m  def primary: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                      ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:142: not found: type Node[0m
+[0m[[31merror[0m] [0m  def lvalue: Parser[Node] = id ~ trailer ^^ {[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:161: not found: type Node[0m
+[0m[[31merror[0m] [0m  def expr_list_comma: Parser[Node] = expr_list<~opt(",")[0m
+[0m[[31merror[0m] [0m                              ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:135: not found: value NodeList[0m
+[0m[[31merror[0m] [0m          case NodeList(x) => ElemList(x)[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:146: not found: type Node[0m
+[0m[[31merror[0m] [0m  def trailer: Parser[List[Tuple2[String,Node]]] = rep( [0m
+[0m[[31merror[0m] [0m                                         ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:152: not found: type Node[0m
+[0m[[31merror[0m] [0m  def foldTrailer(head: Node, list: List[Tuple2[String,Node]]): Node = {[0m
+[0m[[31merror[0m] [0m                                                                ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:152: not found: type Node[0m
+[0m[[31merror[0m] [0m  def foldTrailer(head: Node, list: List[Tuple2[String,Node]]): Node = {[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:152: not found: type Node[0m
+[0m[[31merror[0m] [0m  def foldTrailer(head: Node, list: List[Tuple2[String,Node]]): Node = {[0m
+[0m[[31merror[0m] [0m                                                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:143: not found: value Variable[0m
+[0m[[31merror[0m] [0m      case id ~ list => foldTrailer(Variable(id), list)[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:164: not found: type NodeList[0m
+[0m[[31merror[0m] [0m  def expr_list: Parser[NodeList] = repsep(expression, ",") ^^ NodeList // repsep returns List[Node][0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:149: not found: value Variable[0m
+[0m[[31merror[0m] [0m                                                   | "." ~> id ^^ { case id => Tuple2(".", Variable(id)) }[0m
+[0m[[31merror[0m] [0m                                                                                           ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:154: not found: value Variable[0m
+[0m[[31merror[0m] [0m          case Tuple2(".",Variable(id)) :: tail => foldTrailer(GetAttr(head,id), tail)[0m
+[0m[[31merror[0m] [0m                          ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:154: not found: value GetAttr[0m
+[0m[[31merror[0m] [0m          case Tuple2(".",Variable(id)) :: tail => foldTrailer(GetAttr(head,id), tail)[0m
+[0m[[31merror[0m] [0m                                                               ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:155: not found: value FunCall[0m
+[0m[[31merror[0m] [0m          case Tuple2("(",attr) :: tail => foldTrailer(FunCall(head,attr), tail)[0m
+[0m[[31merror[0m] [0m                                                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:156: not found: value Subscription[0m
+[0m[[31merror[0m] [0m          case Tuple2("[",attr) :: tail => foldTrailer(Subscription(head,attr), tail)[0m
+[0m[[31merror[0m] [0m                                                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:164: not found: value NodeList[0m
+[0m[[31merror[0m] [0m  def expr_list: Parser[NodeList] = repsep(expression, ",") ^^ NodeList // repsep returns List[Node][0m
+[0m[[31merror[0m] [0m                                                               ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:169: not found: type KeyDatumList[0m
+[0m[[31merror[0m] [0m  def key_datum_list: Parser[KeyDatumList] = repsep(key_datum, ",") ^^ KeyDatumList[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:173: not found: type KeyDatum[0m
+[0m[[31merror[0m] [0m  def key_datum: Parser[KeyDatum] = expression ~ ":" ~ expression ^^ {[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:169: not found: value KeyDatumList[0m
+[0m[[31merror[0m] [0m  def key_datum_list: Parser[KeyDatumList] = repsep(key_datum, ",") ^^ KeyDatumList[0m
+[0m[[31merror[0m] [0m                                                                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:174: not found: value KeyDatum[0m
+[0m[[31merror[0m] [0m      case key ~ ":" ~ value => KeyDatum(key,value)[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:177: not found: type FunDef[0m
+[0m[[31merror[0m] [0m  def funcdef: Parser[FunDef] = ("def"~>id<~"(") ~ id_list ~ ((")"~":")~>suite) ^^ {[0m
+[0m[[31merror[0m] [0m                      ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:191: not found: type Node[0m
+[0m[[31merror[0m] [0m  def suite: Parser[Node] = lpar~>statement_list<~rpar[0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:178: not found: value FunDef[0m
+[0m[[31merror[0m] [0m      case id ~ id_list ~ suite => FunDef(id, IdList(id_list), suite)[0m
+[0m[[31merror[0m] [0m                                   ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:181: not found: type ClassDef[0m
+[0m[[31merror[0m] [0m  def classdef: Parser[ClassDef] = ("class"~>id) ~ ("("~>expr_list<~")").? ~ (":"~>suite) ^^ {[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:182: not found: value ClassDef[0m
+[0m[[31merror[0m] [0m      case id ~ Some(expr_list) ~ suite => ClassDef(id, expr_list, suite)[0m
+[0m[[31merror[0m] [0m                                           ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:183: not found: value ClassDef[0m
+[0m[[31merror[0m] [0m      case id ~ None ~ suite => ClassDef(id, NodeList(List()), suite)[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:188: not found: value Variable[0m
+[0m[[31merror[0m] [0m      case id_list => id_list.map(Variable)[0m
+[0m[[31merror[0m] [0m                                  ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:194: not found: type Node[0m
+[0m[[31merror[0m] [0m  def statement_list: Parser[Node] = rep1(statement) ^^ NodeList[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:194: not found: value NodeList[0m
+[0m[[31merror[0m] [0m  def statement_list: Parser[Node] = rep1(statement) ^^ NodeList[0m
+[0m[[31merror[0m] [0m                                                        ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:209: not found: type Node[0m
+[0m[[31merror[0m] [0m  def small_statement_list: Parser[List[Node]] = rep1sep(small_statement, ";")[0m
+[0m[[31merror[0m] [0m                                        ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:198: not found: value NodeList[0m
+[0m[[31merror[0m] [0m  def simple_statement: Parser[Node] = (small_statement_list<~';'.?) <~ rep1(newl) ^^ NodeList[0m
+[0m[[31merror[0m] [0m                                                                                      ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:202: not found: type Node[0m
+[0m[[31merror[0m] [0m  def small_statement: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                              ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:219: not found: type PrintInstr[0m
+[0m[[31merror[0m] [0m  def print_instr: Parser[PrintInstr] = "print"~>expression ^^ PrintInstr[0m
+[0m[[31merror[0m] [0m                          ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:221: not found: type ReturnInstr[0m
+[0m[[31merror[0m] [0m  def return_instr: Parser[ReturnInstr] = "return"~>expression ^^ ReturnInstr[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:223: not found: type Assignment[0m
+[0m[[31merror[0m] [0m  def assignment: Parser[Assignment] = (target<~"=") ~ expression ^^ {[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:227: not found: type Node[0m
+[0m[[31merror[0m] [0m  def if_else_stmt: Parser[Node] = ([0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:234: not found: type WhileInstr[0m
+[0m[[31merror[0m] [0m  def while_stmt: Parser[WhileInstr] = "while" ~> expression ~ (":"~>suite) ^^ {[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:219: not found: value PrintInstr[0m
+[0m[[31merror[0m] [0m  def print_instr: Parser[PrintInstr] = "print"~>expression ^^ PrintInstr[0m
+[0m[[31merror[0m] [0m                                                               ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:221: not found: value ReturnInstr[0m
+[0m[[31merror[0m] [0m  def return_instr: Parser[ReturnInstr] = "return"~>expression ^^ ReturnInstr[0m
+[0m[[31merror[0m] [0m                                                                  ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:224: not found: value Assignment[0m
+[0m[[31merror[0m] [0m      case target ~ expression => Assignment(target, expression)[0m
+[0m[[31merror[0m] [0m                                  ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:229: not found: value IfElseInstr[0m
+[0m[[31merror[0m] [0m            case expression ~ suite1 ~ Some(suite2) => IfElseInstr(expression, suite1, suite2)[0m
+[0m[[31merror[0m] [0m                                                       ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:230: not found: value IfInstr[0m
+[0m[[31merror[0m] [0m            case expression ~ suite ~ None => IfInstr(expression, suite)[0m
+[0m[[31merror[0m] [0m                                              ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:235: not found: value WhileInstr[0m
+[0m[[31merror[0m] [0m      case expression ~ suite => WhileInstr(expression, suite)[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:238: not found: type InputInstr[0m
+[0m[[31merror[0m] [0m  def input_instr: Parser[InputInstr] = "input"~"("~")" ^^^ InputInstr()[0m
+[0m[[31merror[0m] [0m                          ^[0m
+[0m[[31merror[0m] [0m/home/pawel/intellij/scala/KK_zad3/src/main/scala/parser.scala:238: not found: value InputInstr[0m
+[0m[[31merror[0m] [0m  def input_instr: Parser[InputInstr] = "input"~"("~")" ^^^ InputInstr()[0m
+[0m[[31merror[0m] [0m                                                            ^[0m
+[0m[[31merror[0m] [0m82 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m

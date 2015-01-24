@@ -1,9 +1,5 @@
 
-import java.io.FileReader
-import java.io.FileNotFoundException
-import java.io.IOException
-
-import simplifier.Simplifier
+import java.io.{FileNotFoundException, FileReader, IOException}
 
 object Main {
 
